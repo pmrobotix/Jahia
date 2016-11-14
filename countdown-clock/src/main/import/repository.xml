@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <countdown-clock j:dependencies="default"
+                       j:modulePriority="0"
+                       j:moduleType="module"
+                       j:title="Countdown Clock"
+                       jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                       jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-countdown-clock-1.0-SNAPSHOT">
+                    <src jcr:primaryType="jnt:folder">
+                        <main jcr:primaryType="jnt:folder">
+                            <resources jcr:primaryType="jnt:folder">
+                                <javascript jcr:primaryType="jnt:javascriptFolder">
+                                    <countdownClock.js jcr:primaryType="jnt:javascriptFile"/>
+                                </javascript>
+                                <css jcr:primaryType="jnt:cssFolder">
+                                    <countdownClock.css jcr:primaryType="jnt:cssFile"/>
+                                </css>
+                                <jnt_countdownClock jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <countdownClock.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_countdownClock>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                </templates>
+                
+            </countdown-clock>
+    </modules>
+</content>

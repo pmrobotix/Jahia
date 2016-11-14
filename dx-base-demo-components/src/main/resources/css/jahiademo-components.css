@@ -1,0 +1,94 @@
+.flip-container-hover.flip .flipper {
+    transform: rotateY(180deg);
+}
+/* IE FIX */
+@media screen\0 {
+    .flip .back {
+        transform: rotateY(0deg);
+    }
+    .flip .back .caption {
+        transform: rotateY(180deg);
+    }
+    .flip .front {
+        transform: rotateY(180deg);
+    }
+    .flip-container-hover:hover .back {
+        transform: rotateY(0deg);
+    }
+    .flip-container-hover .back .caption {
+        transform: rotateY(180deg);
+    }
+    .flip-container-hover:hover .front {
+        transform: rotateY(180deg);
+    }
+}
+
+.flip-container-hover:hover .flipper, .flip-container-hover.hover .flipper {
+    transform: rotateY(180deg);
+}
+/* Infinite scroller - Content loader button*/
+.btn-u.btn-u-lg.content-loader:focus {
+    color: #fff;
+}
+
+.parallaxoption1 {
+    background-color: rgba(231, 76, 60, 0.85);
+}
+
+.parallaxoption1 * {
+    color: #ffe3e3;
+}
+
+
+.parallaxoption2 {
+    background-color: rgba(45, 48, 48, 0.85);
+}
+
+.parallaxoption2 * {
+    color: #cacaca;
+}
+
+.parallaxoption3 {
+    background-color: rgba(37, 35, 43, 0.94);
+}
+
+.parallaxoption3 * {
+    color: #ababab;
+}
+
+.parallaxoption4 {
+    background-color: rgba(187, 187, 187, 0.85);
+}
+.parallaxoption4 * {
+    color: #3a3535;
+}
+
+.parallaxoption5 {
+    background-color: #FFFFFF;
+}
+.parallaxoption5 * {
+    color: #000000;
+}
+
+.parallaxoption6 {
+    background-color: rgba(255,255,255,0.95);
+}
+ .parallaxoption6 * {
+    color: #000000;
+}
+
+.parallaxoption7 * {
+    color: #000000;
+}
+
+.parallaxoption8 * {
+    color: #FFFFFF;
+}
+
+.parallaxoption9 * {
+    color: #E74C3C;
+}
+
+.parallaxoption10 * {
+    color: #FFFFFF;
+}

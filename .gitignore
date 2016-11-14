@@ -1,0 +1,15 @@
+# default
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Jahia /digital-factory-data/sources/
+digitall/**/*
+countdown-clock/target/**/*
+dx-base-demo-components/target/**/*
+dx-base-demo-core/target/**/*
+dx-base-demo-templates/target/**/*
+pm-robotix/target/**/*

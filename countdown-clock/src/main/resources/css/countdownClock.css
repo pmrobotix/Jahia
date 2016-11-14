@@ -1,0 +1,32 @@
+#timer {
+  margin:auto;
+}
+.countdown {
+  width:100%;
+  text-align:center;
+  color:white;
+}
+#days {
+  color: #306CED;
+}
+#hours {
+  color: #30AEED;
+}
+#minutes {
+  color: #30D4ED;
+}
+#seconds {
+  color: #30EDE0;
+}
+canvas {
+  transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg); /* IE 9 */
+  -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+  padding:1em 0;
+}
+#countdownMockup {
+  display:block;
+  width: 100%;
+  height: 100%; 
+  background: url(mockup/mockup.png);
+}

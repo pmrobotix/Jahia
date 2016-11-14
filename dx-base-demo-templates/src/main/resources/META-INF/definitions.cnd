@@ -1,0 +1,105 @@
+<jdmix = 'http://www.jahia.org/jahiademo/mix/1.0'>
+<jdnt = 'http://www.jahia.org/jahiademo/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[jdnt:navmenu] > jnt:content, jdmix:jahiademo, jmix:droppableContent, jmix:navMenuComponent, jdmix:footerWidgets
+ - maxDepth (long) = '4'
+ - maxTopLevel (long) = '4'
+
+[jdmix:menuLimits] mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - menuDepth (long) = '4'
+ - numTopLevel (long) = '4'
+ - hideHome (string, choicelist[resourceBundle]) = 'Yes' autocreated < 'Yes', 'No'
+
+[jdmix:hidePage] mixin
+ extends = jmix:navMenuItem
+ itemtype = content
+ - value (string) = 'This page will be hidden in the menu.' protected
+
+[jdmix:alternateTitle] mixin
+ extends = jmix:navMenuItem
+ itemtype = content
+ - alternateTitle (string) internationalized
+
+[jdmix:headerWidgets] mixin
+
+[jdmix:footerWidgets] mixin
+
+[jdnt:logo] > jnt:content, jdmix:jahiademo, jdmix:headerWidgets
+ - logo (weakreference, picker[type='image']) < 'jmix:image'
+
+[jdmix:style] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - layout (string, choicelist[resourceBundle]) = 'Wide' autocreated < 'Boxed', 'Wide'
+ - colorTheme (string, choicelist[resourceBundle]) = 'Light' autocreated < 'Dark', 'Light'
+
+[jdmix:favicon] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - icon (weakreference, picker[type='image']) mandatory < 'jmix:image'
+
+[jdnt:login] > jnt:content, jdmix:jahiademo, jdmix:headerWidgets, jmix:studioOnly
+
+[jdnt:toggleNavBarButton] > jnt:content, jdmix:jahiademo, jdmix:headerWidgets, jmix:studioOnly
+
+[jdnt:toggleSearchButton] > jnt:content, jdmix:jahiademo, jdmix:headerWidgets, jmix:studioOnly
+
+[jdmix:siteLogo] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - logo (weakreference, picker[type='image']) mandatory < 'jmix:image'
+
+[jdmix:siteSocialLinks] mixin
+ extends = jnt:virtualsite
+ itemtype = content
+ - facebookLink (string) = 'https://'
+ - googlePlusLink (string) = 'https://'
+ - twitterLink (string) = 'https://'
+ - youtubeLink (string) = 'https://'
+ - instagramLink (string) = 'https://'
+ - linkedinLink (string) = 'https://'
+ - pinterestLink (string) = 'https://'
+
+[jdmix:siteFooterMessage] mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - footerMessage (string) = '© All Rights Reserved.' internationalized
+ - privacyPolicyLinkText (string) = 'Privacy Policy' internationalized
+ - privacyLink (string, choicelist[privacyMessageInitializer,resourceBundle]) = 'none'
+ - termsLinkText (string) = 'Terms of Service' internationalized
+ - termsLink (string, choicelist[termsMessageInitializer,resourceBundle]) = 'none'
+
+[jdmix:privacyLink] > jmix:templateMixin mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - privacyPageLink (weakreference, picker[type='page']) < 'jnt:page'
+
+[jdmix:privacyExternalLink] > jmix:templateMixin mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - privacyPageExternalLink (string) internationalized
+
+[jdmix:privacyModalMessage] > jmix:templateMixin mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - privacyModalMessage (string, richtext) internationalized
+
+[jdmix:termsLink] > jmix:templateMixin mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - termsPageLink (weakreference, picker[type='page']) < 'jnt:page'
+
+[jdmix:termsExternalLink] > jmix:templateMixin mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - termsPageExternalLink (string) internationalized
+
+[jdmix:termsModalMessage] > jmix:templateMixin mixin
+ extends = jnt:virtualsite
+ itemtype = options
+ - termsModalMessage (string, richtext) internationalized
+
