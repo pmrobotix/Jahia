@@ -1,0 +1,117 @@
+/* Isotope */
+
+.isotope-container,
+.isotope-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Isotope filters */
+
+.pmx-isotope-filters {
+  padding: 0 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.pmx-isotope-filters li {
+  display: inline-block;
+  text-align: center;
+}
+
+.pmx-isotope-filters li a {
+  display: inline-block;
+  margin: 10px 5px 0;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #666;
+}
+
+.pmx-isotope-filters .active a {
+  background-color: #4C9ED9;
+  color: #fff;
+}
+
+
+/* Isotope items */
+
+.grid-sizer, .isotope-item {
+  width: 20%;
+}
+
+.isotope-items .isotope-item {
+  padding: 20px 10px 0 10px;
+  border-radius: 2px;
+}
+
+.grid-20 .grid-sizer, .grid-20 .isotope-item {
+  width: 20%;
+}
+
+.grid-25 .grid-sizer, .grid-25 .isotope-item {
+  width: 25%;
+}
+
+.grid-33 .grid-sizer, .grid-33 .isotope-item {
+  width: 33%;
+}
+
+.grid-50 .grid-sizer, .grid-50 .isotope-item {
+  width: 50%;
+}
+
+.isotope-items .item-container {
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.isotope-items .item-link {
+  display: block;
+}
+
+.isotope-items .item-image {
+  display: block;
+  margin: 0;
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+}
+
+.isotope-items .item-caption {
+  margin: 0px;
+  display: block;
+  padding: 10px 0;
+}
+
+
+/* Small */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  .grid-sizer, .isotope-item,
+  .grid-20 .grid-sizer, .grid-20 .isotope-item,
+  .grid-25 .grid-sizer, .grid-25 .isotope-item,
+  .grid-33 .grid-sizer, .grid-33 .isotope-item,
+  .grid-50 .grid-sizer, .grid-50 .isotope-item {
+    width: 100%;
+  }
+}
+
+
+/* Medium */
+
+@media only screen and (min-device-width: 737px) and (max-device-width: 1024px) {
+  .grid-sizer, .isotope-item,
+  .grid-20 .grid-sizer, .grid-20 .isotope-item,
+  .grid-25 .grid-sizer, .grid-25 .isotope-item,
+  .grid-33 .grid-sizer, .grid-33 .isotope-item,
+  .grid-50 .grid-sizer, .grid-50 .isotope-item {
+    width: 50%;
+  }
+}

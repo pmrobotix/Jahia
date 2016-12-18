@@ -1,5 +1,9 @@
 /* Add here all your css styles (customizations) */
 
+.navbar {
+	background: url(../img/bg.png) 0 0 repeat-x;
+}
+
 /*MAIN COLOR TINTS
 *----------------------------
 * Aqua Color: #27d7e7; 

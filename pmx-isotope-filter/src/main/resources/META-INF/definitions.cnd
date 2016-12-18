@@ -1,0 +1,13 @@
+<pmxnt = 'http://www.pmxnt.jahia.pm-robotix.eu'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[pmxnt:isotopEntry] > jnt:content, mix:title
+ - image (weakreference, picker[type='image']) < 'jmix:image'
+ - link (weakreference) < 'jnt:page', 'jnt:file'
+
+[pmxnt:isotopList] > jnt:contentList, jmix:layoutComponentContent orderable
+ - columnPercentage (string, choicelist) = '25' indexed=no < '20', '25', '33', '50'
+ + * (pmxnt:isotopEntry)
+

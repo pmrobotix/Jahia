@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <pmx-isotope-filtering j:dependencies="default"
+                            j:modulePriority="0"
+                            j:moduleType="module"
+                            j:title="Isotope Filtering"
+                            jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                            jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-pmx-isotope-filtering-1.0-SNAPSHOT">
+                    <src jcr:primaryType="jnt:folder">
+                        <main jcr:primaryType="jnt:folder">
+                            <resources jcr:primaryType="jnt:folder">
+                                <css jcr:primaryType="jnt:cssFolder">
+                                    <isotope.css jcr:primaryType="jnt:cssFile"/>
+                                </css>
+                                <pmxnt_isotopList jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <isotopList.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </pmxnt_isotopList>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                </templates>
+                
+            </pmx-isotope-filtering>
+    </modules>
+</content>
